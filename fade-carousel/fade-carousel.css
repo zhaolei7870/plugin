@@ -1,0 +1,88 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 450px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.carousel-container .carousel-main {
+    height: 100%;
+}
+
+.carousel-container .carousel-main li {
+    position: absolute;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.carousel-container .carousel-main a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel-container .carousel-main img {
+    position: absolute;
+    width: 1920px;
+    height: 450px;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+}
+
+/* 分页器 */
+
+.carousel-container .pagination {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: 19px;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-container .pagination a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: url('./images/icon.png') no-repeat -2px -247px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.carousel-container .pagination .active {
+    background: url('./images/icon.png') no-repeat -35px -247px;
+}
+
+/* 箭头 */
+
+.carousel-container .carousel-left, .carousel-container .carousel-right {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -440px;
+    z-index: 1000;
+    width: 30px;
+    height: 60px;
+    text-decoration-line: none;
+    background: #808080 url('./images/icon-new1.png') no-repeat 10px -47px;
+    opacity: .6;
+}
+
+.carousel-container .carousel-left:hover, .carousel-container .carousel-right:hover {
+    background-color: #000;
+}
+
+.carousel-container .carousel-right {
+    margin-left: 345px;
+    background-position: 12px 24px;
+}

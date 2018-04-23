@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>fade-carousel</title>
+    <link href="./fade-carousel.css" rel="stylesheet">
+    <link href="./demo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="carousel-container">
+        <ul id="carouselMain" class="carousel-main">
+            <li>
+                <a href="javascript:;">
+                    <img data-src="http://image.mihui365.com/bbc/advImg/8537011541197619.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img data-src="http://image.mihui365.com/bbc/advImg/8343410700206134.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img data-src="http://image.mihui365.com/bbc/advImg/8254761719667017.jpg">
+                </a>
+            </li>
+        </ul>
+        <div id="pagination" class="pagination"></div>
+        <a href="javascript:;" class="carousel-left"></a>
+        <a href="javascript:;" class="carousel-right"></a>
+    </div>
+    <script type="text/javascript" src="./fade-carousel.js"></script>
+    <script>
+        var carouselMain = document.getElementById('carouselMain');
+        new Carousel(carouselMain, {
+            arrows: true, 
+            pagination: true, 
+            autoPlay: true 
+        });
+    </script>
+</body>
+
+</html>

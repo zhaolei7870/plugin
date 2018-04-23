@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>paging</title>
+    <link href="./paging.css" rel="stylesheet">
+    <link href="./demo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-box"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript" src="./paging.js"></script>
+    <script>
+        $('#page-box').paging({
+            curPage: 1,
+            totalPage: 92,
+            callback: function (index) {
+                console.log(index);
+            }
+        });
+    </script>
+</body>
+
+</html>

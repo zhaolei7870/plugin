@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>imgLazyLoad</title>
+    <link href="./demo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="box">
+        <img data-src="http://seopic.699pic.com/photo/50055/8839.jpg_wh1200.jpg">
+        <img data-src="http://seopic.699pic.com/photo/50072/2447.jpg_wh1200.jpg">
+        <img data-src="http://seopic.699pic.com/photo/50053/4696.jpg_wh1200.jpg">
+        <img data-src="http://seopic.699pic.com/photo/50058/4497.jpg_wh1200.jpg">
+        <img data-src="http://seopic.699pic.com/photo/50022/0988.jpg_wh1200.jpg">
+    </div>
+    <script type="text/javascript" src="./imgLazyLoad.js"></script>
+    <script>
+        new imgLazyLoad({
+            realSrc: 'data-src',
+            extendHeight: 0,
+            opcityTime: .2,
+            scale: .2,
+            isOpcity: true,
+            isScale: true
+        });
+    </script>
+</body>
+
+</html>

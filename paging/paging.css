@@ -1,0 +1,43 @@
+#page-box {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#page-box span, ul, li {
+    float: left;
+}
+
+#page-box span {
+    height: 28px;
+    line-height: 28px;
+    color: #0073A9;
+    border: 1px solid #0073A9!important;
+    margin: 0 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#page-box .page-first, #page-box .page-last {
+    width: 50px;
+}
+
+#page-box .page-prev, #page-box .page-next {
+    width: 70px;
+}
+
+#page-box .page-list .page {
+    min-width: 30px;
+    height: 28px;
+    line-height: 28px;
+    color: #666666;
+    border: 1px solid #dce0e0!important;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+#page-box .page-list .page.current {
+    background-color: #0073A9;
+    border-color: #0073A9;
+    color: #FFFFFF;
+}

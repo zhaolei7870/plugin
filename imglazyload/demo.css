@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    min-width: 100%;
+    min-height: 500px;
+}
+
+#box {
+    margin-top: 500px;
+}
